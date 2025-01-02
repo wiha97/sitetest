@@ -1,9 +1,34 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<title>Hello</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>DesktopMode</title>
+    <base href="index.html" />
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+    <link href="DesktopMode.styles.css" rel="stylesheet" />
 </head>
-<body>
-<marquee>Hello World!</marquee>
-<img src="windows.gif">test</img>
+
+<body style="background-color: #272727;">
+<!--    <div id="app">Loading...</div>-->
+    <div id="app" >
+      <div style="position:absolute; top:30vh; width:100%; text-align:center">
+        <h1 style="color: white;">Loading DesktopMode</h1>
+        <div style="display:flex; gap:10px; justify-content:center; align-items:center">
+          <div class="spinner-border" role="status" style="background-color: white;"></div>
+<!--          The application is loading...-->
+        </div>
+      </div>
+    </div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+    <script src="_framework/blazor.webassembly.js"></script>
 </body>
+
 </html>
